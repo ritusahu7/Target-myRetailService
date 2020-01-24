@@ -2,13 +2,6 @@ package com.target.myretail.model;
 
 public class Circle_Offers {
 
-	
-
-	  @Override
-	public String toString() {
-		return "Circle_Offers [universal_offer_exists=" + universal_offer_exists + ", non_universal_offer_exists="
-				+ non_universal_offer_exists + "]";
-	}
 
 	private boolean universal_offer_exists;
 	  private boolean non_universal_offer_exists;
@@ -34,4 +27,9 @@ public class Circle_Offers {
 	    this.non_universal_offer_exists = non_universal_offer_exists;
 	  }
 	
+	  @Override
+		public String toString() {
+			return "Circle_Offers [universal_offer_exists=" + universal_offer_exists + ", non_universal_offer_exists="
+					+ non_universal_offer_exists + "]";
+		}
 }

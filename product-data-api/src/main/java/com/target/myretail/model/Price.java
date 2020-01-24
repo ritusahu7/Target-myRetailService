@@ -1,9 +1,19 @@
 package com.target.myretail.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 public class Price {
 	
-	
+	@JsonIgnore
 	private int productId;
+	private double value;
+	private String currency_code;
+	
+
+	public Price() {
+		
+	}
+	
 	public Price(int productId, double value, String currency_code) {
 		super();
 		this.productId = productId;
@@ -16,12 +26,7 @@ public class Price {
 	public void setProductId(int productId) {
 		this.productId = productId;
 	}
-	private double value;
-	private String currency_code;
 	
-	public Price() {
-		
-	}
 	public Price(double value, String currency_code) {
 		super();
 		this.value = value;
