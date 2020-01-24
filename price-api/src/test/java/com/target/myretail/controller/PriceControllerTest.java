@@ -50,6 +50,7 @@ public class PriceControllerTest {
 	
 	@Test
 	   public void getPrice() throws Exception {
+		System.out.println("started");
 	      String uri = "/product/12345/price";
 	      MvcResult mvcResult = mvc.perform(MockMvcRequestBuilders.get(uri)
 	         .accept(MediaType.APPLICATION_JSON_VALUE)).andReturn();
